@@ -274,7 +274,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
               <li>Selected for a fully funded presidential initiative by Egypt&#39;s Ministry of Communications and Information Technology in partnership with the Egyptian Military Academy.</li>
               <li>Completed intensive cybersecurity training as part of the program.</li>
               <li>Awarded a fully funded M.Sc. in Cybersecurity Intelligence at Queen&#39;s University, Canada.</li>
-              <li>Built projects in ML-based anomaly detection for industrial control systems, behavior-based threat detection on AWS CloudTrail, and secure cloud LLM deployment with Terraform.</li>
+              <li>Team Leader of the ICS Guardian graduation project (4 members). Built projects in ML-based anomaly detection for industrial control systems, behavior-based threat detection on AWS CloudTrail, and secure cloud LLM deployment with Terraform.</li>
             </ul>
           </div>
         </div>
@@ -312,17 +312,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <div class="txt">
           <div class="eyebrow">Featured · ICS security</div>
           <h3>ics-guardian</h3>
-          <p>Unsupervised process and network anomaly detection for water-chlorination industrial control systems, evaluated on SWaT and WADI. Served as a hardened cloud-native service with a six-gate DevSecOps pipeline.</p>
-          <div class="tags"><span>PyTorch</span><span>FastAPI</span><span>Kubernetes</span><span>Helm</span><span>Prometheus</span><span>Autoencoder</span></div>
+          <p>Unsupervised process and network anomaly detection for water-chlorination industrial control systems, evaluated on SWaT and WADI. A process autoencoder and a network autoencoder are fused by an OR rule, so neither blind spot survives. Served as a hardened cloud-native service with a six-gate DevSecOps pipeline.</p>
+          <p><strong>Role: Team Leader</strong> of a four-person team: AI model training, evaluation and web demo pages.</p>
+          <div class="tags"><span>PyTorch</span><span>FastAPI</span><span>Kubernetes</span><span>Helm</span><span>Prometheus</span><span>Grafana</span><span>Autoencoder</span></div>
           <div class="cta" style="margin-top:22px"><a class="btn" href="https://github.com/MarkoAMalak/ics-guardian" target="_blank" rel="noopener">View repository</a></div>
         </div>
         <div class="metric">
-          <div class="label">PR-AUC · SWaT attack campaign A6</div>
+          <div class="label">ROC-AUC · SWaT attack campaign A6</div>
           <div class="bars">
-            <div class="bar"><span>single</span><span class="track"><span class="fill" style="display:block;width:39%"></span></span><span>0.39</span></div>
-            <div class="bar win"><span>fusion</span><span class="track"><span class="fill" style="display:block;width:47%"></span></span><span>0.47</span></div>
+            <div class="bar"><span>process</span><span class="track"><span class="fill" style="display:block;width:65.9%"></span></span><span>0.659</span></div>
+            <div class="bar"><span>network</span><span class="track"><span class="fill" style="display:block;width:66.7%"></span></span><span>0.667</span></div>
+            <div class="bar win"><span>fusion</span><span class="track"><span class="fill" style="display:block;width:77.6%"></span></span><span>0.776</span></div>
           </div>
-          <small>Fusing process and network signals lifts precision-recall AUC from 0.39 to 0.47.</small>
+          <small>Fusing both branches lifts ROC-AUC on A6 to 0.776. Overall on SWaT: ROC-AUC 0.94, PR-AUC 0.80.</small>
         </div>
       </article>
 
